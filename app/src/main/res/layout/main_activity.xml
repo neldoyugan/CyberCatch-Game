@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- SurfaceView used by the game (you can replace with your GameView subclass later) -->
+    <SurfaceView
+        android:id="@+id/game_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Magnet button (bottom-right) -->
+    <ImageButton
+        android:id="@+id/btn_magnet"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="18dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Magnet"
+        android:src="@android:drawable/ic_menu_compass" />
+
+</FrameLayout>
